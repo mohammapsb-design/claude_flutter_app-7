@@ -1,0 +1,32 @@
+name: claude_style_chat
+description: A Claude-inspired mobile chat app that talks to a local 9Router instance.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.2.1
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  uuid: ^4.4.0
+  flutter_markdown_plus: ^1.0.12
+  intl: ^0.19.0
+  image_picker: ^1.1.2
+  file_picker: ^8.1.4
+  archive: ^3.6.1
+  html: ^0.15.4
+  share_plus: ^10.1.4
+  path_provider: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

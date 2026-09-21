@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This app talks to a 9Router instance running locally on the same phone
+  inside Termux, over plain HTTP (no TLS). Android blocks cleartext HTTP
+  by default since API 28, so we explicitly allow it — but ONLY for
+  loopback addresses, never for the wider internet.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">::1</domain>
+    </domain-config>
+</network-security-config>
